@@ -6,5 +6,6 @@ def decorator_1(func):
         result = func(*args, **kwargs)
         end_time = time.time()
         exec_time = end_time - start_time
+        print(f"{func.__name__} call executed in {execution_time:.4f} sec")
         return result
     return wrapper
