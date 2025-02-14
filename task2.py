@@ -1,11 +1,11 @@
 returnedkwargs = {}
     for key, value in kwargs.items():
-        if isinstance(value, (int, float)):
+        if isinstance(value, bool)
+            returnedkwargs[key] = not (value)
+        elif isinstance(value, (int, float)):
             returnedkwargs[key] = value ** 2
         elif isinstance(value, str):
             returnedkwargs[key] = value[::-1]
-        elif isinstance(value, bool)
-            returnedkwargs[key] = not (value)
         elif isinstance(value, list)
             returnedkwargs[key] = value[::-1]
         elif isinstance(value, tuple)
