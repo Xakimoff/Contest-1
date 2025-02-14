@@ -1,3 +1,4 @@
+def typeBasedTransformer(**kwargs):
 returnedkwargs = {}
     for key, value in kwargs.items():
         if isinstance(value, bool)
